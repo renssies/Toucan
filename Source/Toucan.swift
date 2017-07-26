@@ -35,9 +35,9 @@ import CoreGraphics
  Or create an instance for easy method chaining:
  let resizedAndMaskedImage = Toucan(withImage: myImage).resize(CGSize(width: 100, height: 150)).maskWithEllipse().image
  */
-public class Toucan : NSObject {
+final public class Toucan: NSObject {
     
-    public var image : UIImage
+    public var image: UIImage
     
     public init(image withImage: UIImage) {
         self.image = withImage
